@@ -1,12 +1,16 @@
-# Week 3: Gaining Access - Password Cracking with Johnny
+# Week 3: Gaining Access - Password Cracking with Johnny and Networkwalks Tools.
 
 ## Cybersecurity Internship Assignment
 
 ### 📌 Overview
-This week focuses on gaining access to password-protected PDF files using **Johnny** (GUI for John the Ripper) on Windows. We use an online tool to extract the password hash from encrypted PDFs called Online Hashcrack.
+This week focuses on gaining access to password-protected PDF files using two tools:
+1. **Johnny** - GUI frontend for John the Ripper
+2. **Networkwalks Tools** - Hash Calculator & Password Cracker
+
 
 ---
 
+## Using Johnny.
 ### 🎯 Objectives
 - Extract password hashes from encrypted PDF files using online tool
 - Use Johnny GUI to perform dictionary attacks
@@ -24,37 +28,27 @@ This week focuses on gaining access to password-protected PDF files using **John
 
 ---
 
-### 🔧 Steps
-1. Extract hash: `pdf2john.exe file.pdf > hash.txt`
-2. Open hash in Johnny or Networkwalks
-3. Select wordlist attack
-4. Start cracking
-
-
 ### 💡 Key Learnings
 - Hash extraction from PDFs
 - Dictionary attacks with Johnny
 - Cracking with Networkwalks tools
 - Password security importance
 
-# Password Cracking with Johnny
-
-
 ## 🔧 Step-by-Step Process
 
 ### Step 1: Install Johnny
 1. Download from: https://github.com/openwall/johnny/releases
 2. Install and launch
-3. Go to **Settings** → Set path: `------01. JTR_John CLI Win x64\john-1.9.0-jumbo-1-win64\run`
+3. Go to **Settings** → Set path: `JTR_John CLI Win x64\john-1.9.0-jumbo-1-win64\run`
 
-![Johnny Config](screenshots/adding_johnny_Cl.png)
+![Johnny Config](Screenshots_week3/adding_johnny_Cl.png)
 
 ### Step 2: Extract PDF Hash
 1. Go to: https://www.onlinehashcrack.com/tools-pdf-hash-extractor.php
 2. Upload PDF → Click **Upload**
 3. Copy the hash
 
-![Extract Hash](screenshots/step2_extract_hash.png)
+![Extract Hash](Screenshots_week3/adding_johnny_Cl.png)
 
 ### Step 3: Save Hash
 1. Open Notepad
