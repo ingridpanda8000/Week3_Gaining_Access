@@ -7,7 +7,11 @@ This week focuses on gaining access to password-protected PDF files using two to
 1. **Johnny** - GUI frontend for John the Ripper
 2. **Networkwalks Tools** - Hash Calculator & Password Cracker
 
-
+### 💡 Key Learnings
+- Hash extraction from PDFs
+- Dictionary attacks with Johnny
+- Cracking with Networkwalks tools
+- Password security importance
 ---
 
 ## Using Johnny.
@@ -28,12 +32,6 @@ This week focuses on gaining access to password-protected PDF files using two to
 
 ---
 
-### 💡 Key Learnings
-- Hash extraction from PDFs
-- Dictionary attacks with Johnny
-- Cracking with Networkwalks tools
-- Password security importance
-
 ## 🔧 Step-by-Step Process
 
 ### Step 1: Install Johnny
@@ -48,29 +46,32 @@ This week focuses on gaining access to password-protected PDF files using two to
 2. Upload PDF → Click **Upload**
 3. Copy the hash
 
-![Extract Hash](Screenshots_week3/adding_johnny_Cl.png)
+![Extract Hash](Screenshots_week3/online_hash_extractor.png)
 
 ### Step 3: Save Hash
 1. Open Notepad
 2. Paste hash
-3. Save as `hash.txt` in `hashes/` folder
+3. Save as `pdf_1.txt` in `hashes/` folder
 
-![Save Hash](screenshots/step3_save_hash.png)
+![Save Hash](Screenshots_week3/online_hash_extractor.png)
 
 ### Step 4: Load Hash in Johnny
 1. Open Johnny
 2. Click **File** → **Open Password File**
-3. Select `hash.txt`
+3. Select `pdf_1.txt`
 
-![Load Hash](screenshots/step4_load_hash.png)
+![Load Hash](Screenshots_week3/saved_hashes.png)
 
 
-### Step 5: View Password
-1. Click **Results** tab
-2. Check **Show only cracked**
-3. View password
+### Step 5: Start Cracking
+1. Click **Start Attack** button
+2. Johnny begins cracking
+3. Progress shown in status bar:
+   - Speed (passwords/sec)
+   - Time elapsed
+   - Passwords attempted
 
-![Cracked Password](screenshots/step6_cracked.png)
+![Cracked Password](Screenshots_week3/cracked_password.png)
 
 ---
 
@@ -103,10 +104,13 @@ Using Networkwalks tools to crack password-protected PDF files. The process invo
 ---
 ### Steps
 1. Open Hash Calculator → Upload PDF → Get Hash
-2. Copy hash 
-3. Open Password Cracker → Load hash
-4. Select wordlist (built-in or custom)
-5. Click Start → View cracked password
+![Hash calculator](Screenshots_week3/Hash_calculator.png)
+
+3. Copy hash
+5. Open Password Cracker → Load hash
+   ![Password_craker](Screenshots_week3/password_cracking.png)
+7. Select wordlist (built-in or custom)
+8. Click Start → View cracked password
 
 ### Results
 | PDF File | Cracked Password |
@@ -114,3 +118,12 @@ Using Networkwalks tools to crack password-protected PDF files. The process invo
 | My Locked PDF1 | good-luck |
 | My Locked PDF2 | password1 |
 | My Locked PDF3 | good-luck |
+
+### 📸 Proof of Access
+![pdf1](Screenshots_week3/pdf1_networkwalks.png)
+![pdf2](Screenshots_week3/pdf2_networkwalks.png)
+![pdf3](Screenshots_week3/pdf3_networkwalks.png)
+
+![pdf1](Screenshots_week3/pdf1.png)
+![pdf2](Screenshots_week3/file_2.png)
+![pdf3](Screenshots_week3/pdf3.png)
